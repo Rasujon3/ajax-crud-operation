@@ -1,7 +1,7 @@
 <?php
 $connect = mysqli_connect("localhost","root","","ajax");
 
-$select = "SELECT * FROM ajax";
+$select = "SELECT * FROM ajax ORDER BY Id DESC;";
 $ex = mysqli_query($connect,$select);
 while ($row=mysqli_fetch_array($ex)) { ?>
     <tr>
